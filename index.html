@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Situs Web Profil dan Katalog Usaha UMKM Mandiri">
+    <title>Katalog Usaha UMKM Mandiri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Utama -->
+    <header>
+        <div class="header-container">
+            <h1>Katalog UMKM Mandiri</h1>
+            <p>Pusat Produk Lokal Berkualitas & Terpercaya</p>
+        </div>
+    </header>
+
+    <!-- Navigasi Utama -->
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil Usaha</a></li>
+            <li><a href="#katalog">Katalog Produk</a></li>
+            <li><a href="#keranjang">Keranjang Belanja (<span id="cart-count">0</span>)</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main>
+        <div class="left-content">
+            <!-- Section Profil Usaha -->
+            <section id="profil" class="card-section">
+                <h2>Profil Usaha</h2>
+                <p>Kami adalah usaha mikro yang bergerak di bidang penyediaan produk-produk unggulan lokal. Berdiri sejak tahun 2024, kami berkomitmen untuk memberikan kualitas terbaik, pelayanan cepat, dan harga yang bersaing bagi seluruh pelanggan kami.</p>
+                <div class="visi-misi">
+                    <div>
+                        <h3>Visi</h3>
+                        <p>Menjadi penyedia produk lokal terdepan yang terjangkau dan berkualitas tinggi.</p>
+                    </div>
+                    <div>
+                        <h3>Misi</h3>
+                        <p>Menyajikan produk unggulan, memberikan pelayanan terbaik, dan memberdayakan potensi lokal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Katalog Produk -->
+            <section id="katalog" class="card-section">
+                <h2>Katalog Produk Unggulan</h2>
+                <p class="subtitle">Pilih produk favoritmu dan klik tambahkan ke keranjang:</p>
+
+                <div class="product-grid">
+                    <!-- Article Produk 1 -->
+                    <article class="product-card">
+                        <div class="badge">Terlaris</div>
+                        <h3>Sepatu Sneaker Casual</h3>
+                        <p class="category">Kategori: Fashion / Footwear</p>
+                        <p class="description">Sepatu sneaker lokal dengan bahan nyaman, ringan, dan cocok untuk kegiatan harian.</p>
+                        <p class="price">Rp 250.000</p>
+                        <button type="button" class="btn-add" onclick="addToCart('Sepatu Sneaker Casual', 250000)">+ Tambah Ke Keranjang</button>
+                    </article>
+
+                    <!-- Article Produk 2 -->
+                    <article class="product-card">
+                        <div class="badge">Baru</div>
+                        <h3>Tas Ransel Laptop 15"</h3>
+                        <p class="category">Kategori: Aksesori / Tas</p>
+                        <p class="description">Tas ransel serbaguna dilengkapi kompartemen laptop dan bahan tahan air.</p>
+                        <p class="price">Rp 180.000</p>
+                        <button type="button" class="btn-add" onclick="addToCart('Tas Ransel Laptop 15&quot;', 180000)">+ Tambah Ke Keranjang</button>
+                    </article>
+
+                    <!-- Article Produk 3 -->
+                    <article class="product-card">
+                        <h3>Tumbler Stainless Steel</h3>
+                        <p class="category">Kategori: Perlengkapan Rumah</p>
+                        <p class="description">Tumbler stainless steel tahan panas dan dingin hingga 12 jam dengan desain minimalis.</p>
+
+                      
